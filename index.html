@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon_tik.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        
+        <h1 class="h1">Guess <span id="the">the</span>  Number</h1>
+        <p class="please">Please enter a number between <span class="first">1</span> - <span class="last">100</span></p>
+        <p class="para">Are you ready... </p>
+        <input type="number" name="guess" id="" class="input p-2" autofocus>
+        <button type="submit" class="submit btn btn-warning check">Check</button>
+        <button type="submit" class="submit btn btn-dark restart" style="display: none;" onclick="window.location.reload(false)">Restart</button>
+        <p class="life">You have <span class="life-span">7</span> chance</p>
+        <audio id="applause" src="./voices/mixkit-audience-light-applause-354.wav"></audio>
+        <audio id="up" src="./voices/mixkit-uplifting-bells-notification-938.wav"></audio>
+        <audio id="dow" src="./voices/mixkit-unlock-game-notification-253.wav"></audio>
+        <audio id="loser" src="./voices/mixkit-player-losing-or-failing-2042.wav"></audio>
+        
+
+
+    </div>
+
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
