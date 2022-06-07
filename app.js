@@ -3,7 +3,7 @@ let input = document.querySelector(".input");
 let check = document.querySelector('.check');
 let restart = document.querySelector('.restart');
 let paragraf = document.querySelector('.para');
-let life = 7;
+let life = 6;
 
 
 
@@ -53,8 +53,8 @@ const guessGame = function(){
 check.addEventListener('click', guessGame);
 
 
-check.addEventListener('keydown', (e) => {
-    if(e.code == 'Enter'){
+input.addEventListener('keydown', (e) => {
+    if(e.keyCode === 13){
         guessGame();
     }
 })
